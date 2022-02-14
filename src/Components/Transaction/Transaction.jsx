@@ -22,7 +22,7 @@ const Transaction = ({ record }) => {
   const theSender = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/api/v1/users/${record.sender}`,
+        `https://bubble.qenvie.com/api/v1/users/${record.sender}`,
         config
       );
       setSender(data.name);
@@ -32,7 +32,7 @@ const Transaction = ({ record }) => {
   const theReceiver = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/api/v1/users/${record.receiver}`,
+        `https://bubble.qenvie.com/api/v1/users/${record.receiver}`,
         config
       );
       setReceiver(data.name);

@@ -28,7 +28,7 @@ const RegisterScreen = () => {
     e.preventDefault();
 
     try {
-      await axios.post('http://localhost:5000/api/v1/users', userData);
+      await axios.post('https://bubble.qenvie.com/api/v1/users', userData);
       navigate('/');
     } catch (err) {
       setError('Sorry, could not register');

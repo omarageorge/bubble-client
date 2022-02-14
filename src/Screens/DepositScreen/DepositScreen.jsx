@@ -34,7 +34,7 @@ const DepositScreen = () => {
 
       try {
         await axios.post(
-          'http://localhost:5000/api/v1/users/deposit',
+          'https://bubble.qenvie.com/api/v1/users/deposit',
           {
             user: user.id,
             amount: amount,

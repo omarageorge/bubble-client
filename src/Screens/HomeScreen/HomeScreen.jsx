@@ -20,7 +20,7 @@ const HomeScreen = () => {
     /* Load account data */
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/api/v1/users/${user.id}`,
+        `https://bubble.qenvie.com/api/v1/users/${user.id}`,
         config
       );
       setAccounts(data);
@@ -29,7 +29,7 @@ const HomeScreen = () => {
     /* Load transactions */
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/api/v1/transactions/${user.id}`,
+        `https://bubble.qenvie.com/api/v1/transactions/${user.id}`,
         config
       );
       setTransactions(data);

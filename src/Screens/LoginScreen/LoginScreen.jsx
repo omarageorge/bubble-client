@@ -29,7 +29,7 @@ const LoginScreen = () => {
 
     try {
       const { data } = await axios.post(
-        'http://localhost:5000/api/v1/auth/login',
+        'https://bubble.qenvie.com/api/v1/auth/login',
         { username: userData.email, password: userData.password }
       );
 

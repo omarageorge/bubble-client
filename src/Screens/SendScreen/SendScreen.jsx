@@ -43,7 +43,7 @@ const SendScreen = () => {
 
     try {
       await axios.post(
-        'http://localhost:5000/api/v1/users/transfer',
+        'https://bubble.qenvie.com/api/v1/users/transfer',
         formData,
         config
       );
@@ -54,7 +54,7 @@ const SendScreen = () => {
   useEffect(async () => {
     try {
       const { data } = await axios.get(
-        'http://localhost:5000/api/v1/users',
+        'https://bubble.qenvie.com/api/v1/users',
         config
       );
       setUsers([...data]);
